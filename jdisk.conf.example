@@ -1,0 +1,31 @@
+---
+name: disk.localhost
+host: localhost
+port: 5292
+pass: topsecret
+socks_addr: localhost
+socks_port: 7777
+proxy:
+resource: jdisk
+admins:
+ - jjk@localhost
+sponz_quota: 262144000
+sponzor: platby
+mysql_host: localhost
+mysql_user: root
+mysql_pwd:
+mysql_db: jdisk
+
+public_node: public
+
+nodes:
+ public:
+  name: Public disk
+  dir: /home/jjk/disk/public/{jid}/
+  owner: -1 
+  url: http://localhost/disk/{jid}/
+ private:
+  name: Private disk
+  dir: /home/jjk/disk/private/{jid}/
+  owner: -1
+  url:

@@ -1,0 +1,190 @@
+'TransFile generated on Sat Jul 11 22:41:10 +0200 2009 from file(s) ../commands.rb, ../node.rb, ../jdisk.rb
+'
+msg: <dir> %{name}/
+trans: <dir> %{name}/
+=====[1]=====
+msg: Cannot calculate hash of directory
+trans: Tidak dapat menghitung hash dari direktori
+=====[1]=====
+msg: Cannot copy file '%{file}', not enough space on target
+trans: Tidak dapat menyalin file “%{file}”, tidak cukup ruang pada target
+=====[1]=====
+msg: Cannot delete '%{file}'
+trans: Tidak dapat menghapus “%{file}”
+=====[1]=====
+msg: Directory %{path} has been successfully created
+trans: Direktori “%{path}” telah berhasil dibuat
+=====[1]=====
+msg: Directory '%{file}' has been removed
+trans: Direktori “%{file}” telah dihapus
+=====[1]=====
+msg: Failed creating given directory
+trans: Gagal menciptakan direktori yang diberikan
+=====[1]=====
+msg: File '%{file}' cannot be copied, the target directory probably doesn't exist
+trans: File “%{file}” tidak dapat disalin, mungkin target direktori tidak ada
+=====[1]=====
+msg: File '%{file}' cannot be moved, the target directory probably doesn't exist
+trans: File “%{file}” tidak dapat dipindahkan, mungkin target direktori tidak ada
+=====[1]=====
+msg: File '%{file}' couldn't be sent
+trans: File “%{file}” tidak dapat dikirim
+=====[1]=====
+msg: File '%{file}' doesn't exist
+trans: File “%{file}” tidak ada
+=====[7]=====
+msg: File '%{file}' has been accepted by '%{user}'
+trans: File “%{file}” telah diterima oleh “%{user}”
+=====[1]=====
+msg: File '%{file}' has been copied
+trans: File “%{file}” telah disalin
+=====[1]=====
+msg: File '%{file}' has been moved to '%{target}'
+trans: File “%{file}” sudah dipindahkan ke “%{target}”
+=====[1]=====
+msg: File '%{file}' has been removed
+trans: File “%{file}” telah dihapus
+=====[1]=====
+msg: File '%{file}' has been sent
+trans: File “%{file}” telah dikirim
+=====[1]=====
+msg: File '%{file}' is not accessible via the web interface
+trans: File “%{file}” tidak dapat diakses melalui interface web
+=====[1]=====
+msg: File is being sent by the user '%{user}'
+trans: File sedang dikirim oleh pengguna “%{user}”
+=====[1]=====
+msg: Given directory is not accessible to you
+trans: Direktori yang diberikan tidak dapat anda akses
+=====[1]=====
+msg: Given node doesn't exist
+trans: Node yang diberikan tidak ada
+=====[10]=====
+msg: Given user doesn't exist
+trans: Pengguna yang diberikan tidak ada
+=====[10]=====
+msg: Insufficient privileges
+trans: Tidak cukup hak
+=====[8]=====
+msg: Insufficient privileges to copy file '%{file}' to given target
+trans: Tidak cukup hak untuk menyalin file “%{file}” ke tujuan yang diberikan
+=====[1]=====
+msg: Insufficient privileges to move file '%{file}' to given target
+trans: Tidak cukup hak untuk memindahkan file “%{file}” ke tujuan yang diberikan
+=====[1]=====
+msg: Invalid directory
+trans: Direktori tidak sah
+=====[2]=====
+msg: Jabber Disk cannot send a file to itself
+trans: Jabber Disk tidak dapat mengirim file ke dirinya sendiri
+=====[1]=====
+msg: Language has been set
+trans: Bahasa telah ditetapkan
+=====[1]=====
+msg: Target file '%{file}' already exists
+trans: Tujuan “%{file}” sudah ada
+=====[2]=====
+msg: There is no file in the directory
+trans: Tidak ada file dalam direktori
+=====[1]=====
+msg: There is not enough space to upload this file
+trans: Tidak cukup ruang untuk meng-unggah file ini
+=====[1]=====
+msg: This file is already being uploaded
+trans: File ini telah diunggah
+=====[1]=====
+msg: To upload a file to JDisk send that file to one of the disk contacts.
+Below is list of commands which can be used for maintaining uploaded files, for more information about a command please write 'help <command>'.
+Example: help help (i.e. without the quotes and < > characters)
+
+Some commands accept a path, which can be in several forms:
+ - //user@server%node/dir/file - full path to file, this syntax can be used to easily access public files of other users or files on different nodes. When user@server% or %node is omitted from the path the current user or node will be used. Node can be one of %{nodes}.
+ - /dir/file, ../dir/file - absolute and relative paths on given node, relative paths are based on current directory.
+ - dir/#1 - each file in a directory has a number by which it can be referenced. The number can be obtained by the 'ls' command. A file's number can however change in time with changes made to a directory (deleting files, uploading new files etc.). It is also possible to 'select' more than one file with this method (when supported by the command).
+ Example: #1,2,4-6 would select files 1, 2, 4, 5, 6
+
+Files uploaded to public node can be accessed on the web by url %{public_url}
+
+Available commands: %{cmd}
+trans: Untuk meng-unggah file ke JDisk kirim file itu ke salah satu kontak disk.
+ Berikut adalah daftar perintah yang dapat digunakan untuk mengatur file yang diunggah, untuk informasi lebih lanjut tentang perintah silahkan menulis “help <command>”.
+Contoh: help help (i.e. tanpa tanda kutip dan karakter < >)
+
+Beberapa perintah menerima path/jalur, yang bisa dalam beberapa bentuk:
+ — //user@server%node/dir/file — path lengkap ke file, sintaks ini dapat digunakan untuk dengan mudah mengakses file publik pengguna lain atau file pada node yang berbeda. Ketika user@server% atau %node dihilangkan dari jalan pengguna saat ini atau node yang akan digunakan. Node dapat menjadi salah satu dari %{nodes}.
+ — /dir/file, ../dir/file — path/jalur absolut dan relatif yang diberikan pada node, path/jalur relatif berdasarkan direktori saat ini.
+ — dir/#1 — setiap file di direktori memiliki nomor yang dapat dirujuk.  Nomor ini dapat diperoleh dengan perintah “ls”. Nomor file yang ada dapat berubah dalam waktu dengan adanya perubahan yang dibuat ke direktori (menghapus file, meng-upload file baru dll). Dimungkinkan untuk “memilih” lebih dari satu file dengan metode ini (bila didukung oleh perintah).
+ Contoh: #1,2,4-6 tanpa memilih file 1, 2, 4, 5, 6
+
+File yang telah diunggah ke node publik dapat diakses di web dengan url %{public_url}
+
+Perintah yang tersedia: %{cmd}
+=====[1]=====
+msg: Transfer of file '%{file}' has timed out, please try again
+trans: Transfer file “%{file}” telah habis waktunya, silakan coba lagi
+=====[1]=====
+msg: You are not registered with this service
+trans: Anda tidak terdaftar pada layanan ini
+=====[2]=====
+msg: cd <path> - change current directory to the given path. The current directory cannot be set to that of another node or user
+trans: cd <path> — rubah direktori saat ini ke jalur/path yang diberikan. Direktori saat ini tidak dapat diatur dengan node atau pengguna lain
+=====[1]=====
+msg: du - prints statistics about used disk space
+trans: du — cetak statistik tentang ruang disk yang digunakan
+=====[1]=====
+msg: get <path> - sends you given file
+trans: get <path> — mengirim file yang diberikan
+=====[1]=====
+msg: hash <path> - prints CRC32 of given file
+trans: hash <path> — cetak CRC32 dari file yang diberikan
+=====[1]=====
+msg: help <command> - prints possible commands or when command name is given as a parameter prints detailed help for that command
+trans: help <command> — cetak perintah yang tersedia atau ketika nama perintah yang diberikan sebagai parameter untuk mencetak rincian bantuan perintah
+=====[1]=====
+msg: help, exit, listincoming, remincoming, load, debug, recount
+trans: bantuan, keluar, listincoming, remincoming, load, debug, recount
+=====[1]=====
+msg: lang <lang_code> - sets disk language. This setting overrides the language sent by your client.
+Enter 'none' as the lang_code to reset the language to the default (the one sent by your client).
+Supported languages: %{languages}
+trans: lang <lang_code> — penetapan bahasa disk. Setelan ini mengabaikan bahasa yang dikirimkan oleh klien anda.
+Masukkan “none” sebagai lang_code untuk mengatur ulang bahasa ke default (yang dikirim oleh klien anda).
+Bahasa yang didukung: %{languages}
+=====[1]=====
+msg: link <path> - prints URL of given file when it is accessible on the web
+trans: link <path> — cetak URL file yang diberikan jika file dapat diakses di web
+=====[1]=====
+msg: ls [-d|-n] <path> - lists contents of the current directory. When a path is given, the contents of that path are listed when possible.
+ -d sorts files by creation date
+ -n sorts files by name
+trans: ls [-d|-n] <path> — daftar isi dari direktori saat ini. Ketika sebuah path diberikan, isi dari path akan tercantum bila memungkinkan.
+ -d pengurutan file berdasarkan tanggal pembuatan file
+ -n pengurutan file berdasarkan nama file
+=====[1]=====
+msg: mkdir <path> - makes new directory on given path
+trans: mkdir <path> — membuat direktori baru pada jalur yang diberikan
+=====[1]=====
+msg: mv <source> <target> - moves source file to target file
+trans: mv <source> <target> — memindahkan sumber file ke file target
+=====[1]=====
+msg: ok
+trans: ok
+=====[1]=====
+msg: pwd - prints current working directory
+trans: pwd — cetak direktori yang bekerja saat ini
+=====[1]=====
+msg: rm <path> - deletes given path
+trans: rm <path> — menghapus jalur/path yang diberikan
+=====[1]=====
+msg: send <jid/resource> <path> - sends the given file to the given user. The JID must be a full JID (with a resource), otherwise the file cannot be sent
+trans: send <jid/resource> <path> — mengirim file yang diberikan kepada pengguna tertentu. JID user tujuan harus JID penuh (dengan resource), jiks tidak, file tidak dapat dikirim
+=====[1]=====
+msg: public
+trans: umum
+=====[1]=====
+msg: private
+trans: pribadi
+=====[1]=====
+msg: album
+trans: album
+=====[1]=====

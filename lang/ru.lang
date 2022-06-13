@@ -1,0 +1,190 @@
+'TransFile generated on Sat Jul 11 22:41:10 +0200 2009 from file(s) ../commands.rb, ../node.rb, ../jdisk.rb
+'
+msg: <dir> %{name}/
+trans: <dir> %{name}/
+=====[1]=====
+msg: Cannot calculate hash of directory
+trans: Невозможно рассчитать хэш каталога
+=====[1]=====
+msg: Cannot copy file '%{file}', not enough space on target
+trans: Невозможно скопировать файл '%{file}': недостаточно места на диске
+=====[1]=====
+msg: Cannot delete '%{file}'
+trans: Невозможно удалить '%{file}'
+=====[1]=====
+msg: Directory %{path} has been successfully created
+trans: Каталог %{path} создан успешно
+=====[1]=====
+msg: Directory '%{file}' has been removed
+trans: Каталог '%{file}' удалён
+=====[1]=====
+msg: Failed creating given directory
+trans: Ошибка при создании заданного каталога
+=====[1]=====
+msg: File '%{file}' cannot be copied, the target directory probably doesn't exist
+trans: Невозможно скопировать файл '%{file}': целевой каталог, возможно, не существует
+=====[1]=====
+msg: File '%{file}' cannot be moved, the target directory probably doesn't exist
+trans: Невозможно переместить файл '%{file}': целевой каталог, возможно, не существует
+=====[1]=====
+msg: File '%{file}' couldn't be sent
+trans: Невозможно отправить файл '%{file}'
+=====[1]=====
+msg: File '%{file}' doesn't exist
+trans: Файл '%{file}' не существует
+=====[7]=====
+msg: File '%{file}' has been accepted by '%{user}'
+trans: Файл '%{file}' принят пользователем '%{user}'
+=====[1]=====
+msg: File '%{file}' has been copied
+trans: Файл '%{file}' скопирован
+=====[1]=====
+msg: File '%{file}' has been moved to '%{target}'
+trans: Файл '%{file}' перемещен в '%{target}'
+=====[1]=====
+msg: File '%{file}' has been removed
+trans: Файл '%{file}' удалён
+=====[1]=====
+msg: File '%{file}' has been sent
+trans: Файл '%{file}' отправлен
+=====[1]=====
+msg: File '%{file}' is not accessible via the web interface
+trans: Файл '%{file}' недоступен через web-интерфейс
+=====[1]=====
+msg: File is being sent by the user '%{user}'
+trans: Пользователь '%{user}' посылает файл
+=====[1]=====
+msg: Given directory is not accessible to you
+trans: Данный каталог недоступен вам
+=====[1]=====
+msg: Given node doesn't exist
+trans: Данная ветка не существует
+=====[10]=====
+msg: Given user doesn't exist
+trans: Данный пользователь не существует
+=====[10]=====
+msg: Insufficient privileges
+trans: Недостаточно прав
+=====[8]=====
+msg: Insufficient privileges to copy file '%{file}' to given target
+trans: Недостаточно прав для копирования файла '%{file}' в заданный каталог
+=====[1]=====
+msg: Insufficient privileges to move file '%{file}' to given target
+trans: Недостаточно прав для перемещения файла '%{file}' в заданный каталог
+=====[1]=====
+msg: Invalid directory
+trans: Неправильный каталог
+=====[2]=====
+msg: Jabber Disk cannot send a file to itself
+trans: Диск Jabber не может послать файл самому себе
+=====[1]=====
+msg: Language has been set
+trans: Язык выбран
+=====[1]=====
+msg: Target file '%{file}' already exists
+trans: Целевой файл '%{file}' уже существует
+=====[2]=====
+msg: There is no file in the directory
+trans: В каталоге нет файлов
+=====[1]=====
+msg: There is not enough space to upload this file
+trans: Недостаточно места для загрузки данного файла
+=====[1]=====
+msg: This file is already being uploaded
+trans: Данный файл уже загружается
+=====[1]=====
+msg: To upload a file to JDisk send that file to one of the disk contacts.
+Below is list of commands which can be used for maintaining uploaded files, for more information about a command please write 'help <command>'.
+Example: help help (i.e. without the quotes and < > characters)
+
+Some commands accept a path, which can be in several forms:
+ - //user@server%node/dir/file - full path to file, this syntax can be used to easily access public files of other users or files on different nodes. When user@server% or %node is omitted from the path the current user or node will be used. Node can be one of %{nodes}.
+ - /dir/file, ../dir/file - absolute and relative paths on given node, relative paths are based on current directory.
+ - dir/#1 - each file in a directory has a number by which it can be referenced. The number can be obtained by the 'ls' command. A file's number can however change in time with changes made to a directory (deleting files, uploading new files etc.). It is also possible to 'select' more than one file with this method (when supported by the command).
+ Example: #1,2,4-6 would select files 1, 2, 4, 5, 6
+
+Files uploaded to public node can be accessed on the web by url %{public_url}
+
+Available commands: %{cmd}
+trans: Для загрузки файла на JDisk отправьте его одному из контактов сервиса.
+Ниже приводится список команд для управления загруженными файлами. Для получения подробной информации о команде отправьте 'help <команда>'.
+Например: help help (т.е. без кавычек и символов < >)
+
+Для некоторых команд нужен путь, который может быть указан несколькими способами:
+ - //пользователь@сервер%ветка/каталог/файл - Полный путь к файлу, этот синтаксис используется для доступа к общедоступным файлам других пользователей или файлам на других ветках. Если в пути отсутствует пользователь@сервер% или %ветка, используется текущий пользователь или ветка. Список доступных веток: %{nodes}.
+ - /dir/file, ../dir/file - Абсолютный и относительный пути на заданной ветке. Относительные пути зависят от текущего каталога.
+ - dir/#1 - У каждого файла в каталоге есть номер-ссылка. Этот номер выводится командой 'ls'. Номер файла может измениться, если в каталог загружаются новые файлы, удаляются существующие и т.д. Таким же образом можно 'выделять' несколько файлов (если такое выделение поддерживается вызванной командой).
+ Например: #1,2,4-6 выделит файлы 1, 2, 4, 5, 6
+
+Файлы, загруженные на общедоступную ветку, можно просмотреть через web по адресу: %{public_url}
+
+Доступные команды: %{cmd}
+=====[1]=====
+msg: Transfer of file '%{file}' has timed out, please try again
+trans: Время для передачи файла '%{file}' истекло, пожалуйста, попробуйте снова
+=====[1]=====
+msg: You are not registered with this service
+trans: Вы не зарегистрированы на данном сервисе
+=====[2]=====
+msg: cd <path> - change current directory to the given path. The current directory cannot be set to that of another node or user
+trans: cd <путь> - Изменяет текущий каталог на заданный путь. Текущий каталог нельзя заменить на каталог, расположенный на другой ветке или у другого пользователя
+=====[1]=====
+msg: du - prints statistics about used disk space
+trans: du - Выводит статистику использования места на диске
+=====[1]=====
+msg: get <path> - sends you given file
+trans: get <путь> - Посылает вам заданный файл
+=====[1]=====
+msg: hash <path> - prints CRC32 of given file
+trans: hash <path> - Выводит CRC32 заданного файла
+=====[1]=====
+msg: help <command> - prints possible commands or when command name is given as a parameter prints detailed help for that command
+trans: help <команда> - Выводит список возможных команд или, если имя команды задано как параметр, выводит подробную справку для этой команды
+=====[1]=====
+msg: help, exit, listincoming, remincoming, load, debug, recount
+trans: help, exit, listincoming, remincoming, load, debug, recount
+=====[1]=====
+msg: lang <lang_code> - sets disk language. This setting overrides the language sent by your client.
+Enter 'none' as the lang_code to reset the language to the default (the one sent by your client).
+Supported languages: %{languages}
+trans: lang <код_языка> - Устанавливает язык для диска. Данная настройка перезаписывает язык, заданный вашим клиентом.
+Для сброса настройки языка в заданный вашим клиентом, введите 'none' в качестве параметра код_языка.
+Доступные языки: %{languages}
+=====[1]=====
+msg: link <path> - prints URL of given file when it is accessible on the web
+trans: link <путь> - Выводит ссылку на заданный файл, если он доступен для web
+=====[1]=====
+msg: ls [-d|-n] <path> - lists contents of the current directory. When a path is given, the contents of that path are listed when possible.
+ -d sorts files by creation date
+ -n sorts files by name
+trans: ls [-d|-n] <путь> - Выводит содержимое текущего каталога. Если задан путь, при возможности выводится содержимое заданного каталога.
+ -d Сортирует файлы по дате создания
+ -n Сортирует файлы по названию
+=====[1]=====
+msg: mkdir <path> - makes new directory on given path
+trans: mkdir <путь> - Создаёт новый каталог по заданному пути
+=====[1]=====
+msg: mv <source> <target> - moves source file to target file
+trans: mv <источник> <назначение> - Перемещает файл-источник в файл-назначение
+=====[1]=====
+msg: ok
+trans: ok
+=====[1]=====
+msg: pwd - prints current working directory
+trans: pwd - Выводит текущий каталог
+=====[1]=====
+msg: rm <path> - deletes given path
+trans: rm <путь> - Удаляет заданный путь
+=====[1]=====
+msg: send <jid/resource> <path> - sends the given file to the given user. The JID must be a full JID (with a resource), otherwise the file cannot be sent
+trans: send <jid/ресурс> <путь> - Отправляет заданный файл заданному пользователю. Необходимо указать полный JID (включая ресурс). В противном случае отправка файла невозможна
+=====[1]=====
+msg: public
+trans: Общедоступный
+=====[1]=====
+msg: private
+trans: Частный
+=====[1]=====
+msg: album
+trans: Альбом
+=====[1]=====
